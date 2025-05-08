@@ -43,7 +43,7 @@ xtick(0.5(12)60.5) xlabel(6"2002" 18"2003" 30"2004" 42"2005" 54"2006", noticks l
 *It is also useful to produce summary statistics for before and after the intervention
 summ, detail
 
-bysort smokban: summ aces
+by smokban, sort: summ aces
 bysort smokban: summ rate
 
 
