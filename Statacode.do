@@ -65,7 +65,7 @@ glm aces smokban time, family(poisson) link(log) offset(logstdpop) eform
 predict pred, nooffset
 
 *This can then be plotted along with a scatter graph:
-gen rate1 = aces/stdpop /*to put rate in same scale as count in model */
+generate rate1 = aces/stdpop /*to put rate in same scale as count in model */
 twoway (scatter rate1 time) (line pred time, lcolor(red)) , title("Sicily, 2002-2006") ///
 ytitle(Std rate x 10000) yscale(range(0 .)) ylabel(#5, labsize(small) angle(horizontal)) ///
 xtick(0.5(12)60.5) xlabel(6"2002" 18"2003" 30"2004" 42"2005" 54"2006", noticks labsize(small)) xtitle(year) ///
