@@ -36,7 +36,7 @@ indication of how stable the trend is over time, whether a linear model is likel
 and whether there appears to be a seasonal trend */
 
 *Here we convert the counts into a rate and examine a scatter plot of the pre-intervention data
-gen rate = aces/stdpop*10^5
+generate rate = aces/stdpop*10^5
 twoway (scatter rate time) if smokban==0, title("Sicily, 2002-2006") ytitle(Std rate x 10000) yscale(range(0 .)) ylabel(#5, labsize(small) angle(horizontal)) ///
 xtick(0.5(12)60.5) xlabel(6"2002" 18"2003" 30"2004" 42"2005" 54"2006", noticks labsize(small)) xtitle(year)
 
