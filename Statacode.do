@@ -14,7 +14,7 @@ capture log close
 ****************
 
 insheet using "sicily.csv", comma
-*or: import delimited "sicily.csv"
+import delimited "sicily.csv", firstrow
 
 /* This dataset includes the following variables 
 year
