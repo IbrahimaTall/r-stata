@@ -56,7 +56,7 @@ In order to do this we model the count data directly (rather than the rate which
 We then use the population (log transformed) as an offset variable in order to transform back to rates */
 
 *log transform the standardised population:
-gen logstdpop = log(stdpop)
+generate logstdpop = log(stdpop)
 
 *Poisson with the outcome (aces), intervention (smokban) and time as well as the population offset offset
 glm aces smokban time, family(poisson) link(log) offset(logstdpop) eform
