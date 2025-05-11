@@ -160,7 +160,7 @@ xline(36.5)
 ***add a change in slope
 
 *generate interaction term between intervention and time centered at the time of intervention
-gen inter_smokbantime = smokban*(time-36)
+generate inter_smokbantime = smokban*(time-36)
 
 *restore fourier variables that were previously changed
 drop cos* sin* degrees
