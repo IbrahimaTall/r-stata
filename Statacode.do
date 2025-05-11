@@ -106,7 +106,7 @@ pac res, yw
 and click on search */
 
 *we need to create a degrees variable for time divided by the number of time points in a year (i.e. 12 for months)
-gen degrees=(time/12)*360
+generate degrees=(time/12)*360
 
 *we then select the number of sine/cosine pairs to include:
 fourier degrees, n(2)
