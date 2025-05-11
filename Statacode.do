@@ -164,7 +164,7 @@ gen inter_smokbantime = smokban*(time-36)
 
 *restore fourier variables that were previously changed
 drop cos* sin* degrees
-gen degrees=(time/12)*360
+generate degrees=(time/12)*360
 fourier degrees, n(2)
 
 *add the interaction term to the model
