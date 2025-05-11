@@ -41,7 +41,7 @@ twoway (scatter rate time) if smokban==0, title("Sicily, 2002-2006") ytitle(Std 
 xtick(0.5(12)60.5) xlabel(6"2002" 18"2003" 30"2004" 42"2005" 54"2006", noticks labsize(small)) xtitle(year)
 
 *It is also useful to produce summary statistics for before and after the intervention
-summ, detail
+summarize, detail
 
 by smokban, sort : summarize aces
 bysort smokban: summ rate
