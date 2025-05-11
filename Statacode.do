@@ -72,7 +72,7 @@ xtick(0.5(12)60.5) xlabel(6"2002" 18"2003" 30"2004" 42"2005" 54"2006", noticks l
 xline(36.5)
 
 *Generate the counterfactual by removing the effect of the intervention (_b[smokban]) for the post-intervention period
-gen pred1 = pred/exp(_b[smokban]) if smokban==1
+generate pred1 = pred/exp(_b[smokban]) if smokban==1
 
 *Add the counterfactual to the plot
 twoway (scatter rate1 time) (line pred time, lcolor(red)) (line pred1 time, lcolor(red) lpattern(dash)), title("Sicily, 2002-2006") ///
