@@ -26,7 +26,7 @@ library("splines") ; library("vcd")
 data <- read.csv("sicily.csv")
 head(data)
 View(data)
-
+names(data)
 # This dataset includes the following variables:
 # year
 # month
