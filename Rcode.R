@@ -15,7 +15,7 @@
 
 
 # Install packages required for the analysis (uncomment if needed)
-#install.packages("lmtest") ; install.packages("Epi")
+install.packages("lmtest") ; install.packages("Epi")
 #install.packages("tsModel"); install.packages("vcd")
 
 # load the packages
